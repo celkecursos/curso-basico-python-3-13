@@ -2,7 +2,8 @@ Código-fonte das aulas sobre [Python](https://www.youtube.com/watch?v=OsH8sZb8x
 
 ## Requesitos
 
-* Python 3 ou superior;
+* Python 3 ou superior - Conferir a versão: python --version
+* MySQL 8 ou superio - Conferir a versão: mysql --version
 
 ## Como rodar o projeto baixado
 
@@ -19,4 +20,33 @@ cd aula01
 Executar o programa Python no terminal.
 ```
 python app.py
+```
+
+## Sequencia para criar o projeto
+
+Instalar a biblioteca para conectar o Python com MySQL.
+```
+pip install mysql-connector-python
+```
+
+## Acessar o MySQL.
+
+Acessar o MySQL.
+```
+mysql -h localhost -u root -p
+```
+
+Listar as base de dados.
+```
+SHOW DATABASES;
+```
+
+Sair do MySQL.
+```
+exit
+```
+
+Criar a base de dados.
+```
+CREATE DATABASE celke CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
