@@ -50,3 +50,13 @@ Criar a base de dados.
 ```
 CREATE DATABASE celke CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
+Criar a tabela "users".
+```
+CREATE TABLE celke.users(
+    id int NOT NULL AUTO_INCREMENT, 
+    name varchar(220) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+    email varchar(220) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+    PRIMARY key (id)
+) ENGINE=InnoDB DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
